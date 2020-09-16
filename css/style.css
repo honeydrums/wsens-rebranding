@@ -1,3 +1,12 @@
+.partners-list-element img {
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.partners-list-element img:hover {
+    filter: grayscale(0%);
+}
+
 .right-side-clip {
     clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
 }
