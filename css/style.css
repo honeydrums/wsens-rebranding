@@ -1,12 +1,36 @@
+/* переменные */
+
+:root {
+    --main-blue: #1D3E81;
+    --dark-blue: #252D3F;
+    --blue: #1182C5;
+    --black: #000000;
+    --gray: #A4A4A4;
+    --light-gray: #E5E5E5;
+    --yellow: #EAB631;
+    --light-green: #16B992;
+}
+
+/* общие стили */
+
 body {
     margin: 0;
     padding: 0;
-    min-width: 1440px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
     color: #333333;
+}
+
+/* сброс подчёркивания сссылок и нумерование списков */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 /* эффект при наведении на логотипы */
