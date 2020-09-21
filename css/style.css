@@ -9,28 +9,77 @@
     --light-gray: #E5E5E5;
     --yellow: #EAB631;
     --light-green: #16B992;
+    --white: #FFFFFF;
+    --transparent: transparent;
 }
 
 /* общие стили */
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 300;
     font-size: 16px;
+    font-style: normal;
     line-height: 32px;
     color: #333333;
 }
 
-/* сброс подчёркивания сссылок и нумерование списков */
+/* класс для центрирования блоков */
+
+.centered {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* bg - background */
+
+.bg__dark-blue {
+    background-color: var(--dark-blue);
+}
+
+/* btn - button, clr - color */
+
+.btn-bg__blue-clr__white {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.btn-bg__blue-clr__white:hover {
+    background-color: var(--main-blue);
+    color: var(--white);
+}
+
+/* trnsprnt - transparent */
+
+.btn-bg__trnsprnt-clr__white {
+    background-color: var(--transparent);
+    color: var(--white);
+}
+
+.btn-bg__trnsprnt-clr__white:hover {
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+
+/* уберём курсив у адресов и сбросим подчёркивания ссылок, а так же стили списков */
 
 a {
+    font-size: 14px;
     text-decoration: none;
+    color: var(--black);
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+address {
+    font-style: normal;
 }
 
 /* эффект при наведении на логотипы */
@@ -54,4 +103,69 @@ ul {
 /* ...слева */
 .left-side-clip {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+}
+
+/* звёзды рейтинга */
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    color: var(--yellow);
+}
+
+/* точечная стилизация */
+
+.top-header {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    color: var(--white);
+}
+
+.top-header * {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.top-header__login a {
+    color: var(--white);
+}
+
+.bottom-header {
+    display: flex;
+    height: 83px;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.bottom-header * {
+    flex-grow: 1;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bottom-header__nav-list {
+    display: flex;
+}
+
+.bottom-header__nav_phone {
+    display: flex;
+    flex-direction: column;
+}
+
+/* временно уберём карту */
+
+.contacts img {
+    display: none;
 }
