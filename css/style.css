@@ -9,7 +9,7 @@ body {
     color: #333333;
 }
 
-  /* эффект при наведении на логотипы */
+/* эффект при наведении на логотипы */
 
 .partners-list-element img {
     filter: grayscale(100%);
