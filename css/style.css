@@ -29,7 +29,7 @@ body {
 /* класс для центрирования блоков */
 
 .centered {
-    max-width: 1110px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -162,6 +162,14 @@ address {
 .bottom-header__nav_phone {
     display: flex;
     flex-direction: column;
+}
+
+/* первый блок */
+
+.welcome {
+    background: url('../img/welcome-bg.jpg') no-repeat;
+    background-size: contain;
+    max-height: 32.5vw;
 }
 
 /* временно уберём карту */
