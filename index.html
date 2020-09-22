@@ -10,28 +10,42 @@
 </head>
 <body>
     <div class="top-header__wrapper bg__dark-blue">
-        <header class="top-header centered">
-            <address class="top-header__address">г. Тверь, ул. Учительская, д. 59</address>
-            <form action="" method="get">
-                <input type="search" name="search" id="searchInput">
+        <header class="top-header centered grid-24-col pd-x-10">
+            <address class="top-header__address"><img src="img/location-icon.svg" alt="Адрес"> г. Тверь, ул. Учительская, д. 59</address>
+            <form action="" method="get" class="top-header__search-form">
+                <input type="search" name="search" id="searchInput" class="display-none">
             </form>
             <ul class="top-header__btns">
-                <li class="top-header__btns_search-label" title="Поиск по сайту"></li>
-                <li class="top-header__btns_cart" title="Корзина"></li>
-                <li class="top-header__btns_compare" title="Сравнение"></li>
-                <li class="top-header__btns_favourite" title="Избранное"></li>
+                <li class="top-header__btns_search-label" title="Поиск по сайту">
+                    <img src="img/search-icon.svg" alt="Поиск по сайту" width="16" height="16">
+                </li>
+                <li class="top-header__btns_cart" title="Корзина">
+                    <a href=""><img src="img/cart-icon.svg" alt="Корзина" width="16" height="16"></a>
+                </li>
+                <li class="top-header__btns_compare" title="Сравнение">
+                    <a href=""><img src="img/compare-icon.svg" alt="Сравнение" width="16" height="16"></a>
+                </li>
+                <li class="top-header__btns_favourite" title="Избранное">
+                    <a href=""><img src="img/favourite-icon.svg" alt="Избранное" width="16" height="16"></a>
+                </li>
             </ul>
-            <div class="top-header__login">
-                <span class="top-header__login-icon"></span>
-                <a href=""><span class="login-bold">Войти</span> в личный кабинет</a>
+            <div class="top-header__login" title="Войти в личный кабинет">
+                <a href=""><img src="img/login-icon.svg" alt="вход в личный кабинет">
+                    <p class="login-text"><span class="login-bold">Войти&nbsp;</span><br>в личный кабинет</p>
+                </a>
             </div>
         </header>
     </div>
-    <header class="bottom-header centered">
+    <header class="bottom-header centered grid-24-col pd-x-10">
         <a href="" class="header-logo">
             <img src="./img/main-logo.svg" alt="Логотип wsens" width="230" height="32">
         </a>
         <nav class="bottom-header__nav">
+            <button class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
             <ul class="bottom-header__nav-list">
                 <li class="bottom-header__nav-list_element">
                     <a href="">Каталог</a>
@@ -54,12 +68,12 @@
             </ul>
         </nav>
         <div class="bottom-header__nav_phone">
-            <a href="tel:+74997055933">+7 499 705 59 33</a>
+            <a href="tel:+74997055933"><img src="img/phone-icon.svg" alt="Номер телефона" width="16" height="16">+7 499 705 59 33</a>
             <span>Заказать звонок</span>
         </div>
     </header>
     <main>
-        <section class="welcome centered">
+        <section class="welcome centered grid-12-col">
             <h1 class="welcome-title">Производство киосков самообслуживания</h1>
             <p class="welcome-text">Разработка, производство и продажа киосков самообслуживания</p>
         </section>
