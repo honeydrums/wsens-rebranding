@@ -305,10 +305,10 @@ img {
 		grid-column: span 9;
 	}
 	.top-header__search-form {
-		grid-column: 13 / 20;
+		grid-column: 11 / -8;
 	}
 	.top-header__btns {
-		grid-column: -6 / -3;
+		grid-column: -7 / -3;
 	}
 	.top-header__login {
 		grid-column: -2 / -1;
