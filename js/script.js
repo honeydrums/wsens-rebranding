@@ -6,4 +6,5 @@ document.querySelector('.top-header__btns_search-label').addEventListener('click
 
 document.querySelector('.hamburger--squeeze').addEventListener('click', function() {
     this.classList.toggle('is-active');
+    document.querySelector('.bottom-header__nav-list').classList.toggle('bottom-header__nav-list__mobile')
 });
