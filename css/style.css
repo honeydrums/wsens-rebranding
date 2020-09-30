@@ -409,7 +409,7 @@ img {
 	font-size: 23px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
 	.welcome-title {
 		padding-left: 20px;
 		font-size: 33px;
@@ -421,12 +421,21 @@ img {
 }
 
 @media (max-width: 680px) {
+	.welcome {
+		/* height: 136vw; */
+	}
+	.welcome__wrapper {
+		background: url(../img/welcome-bg-mobile.jpg) no-repeat;
+	}
 	.welcome-title {
 		font-size: 26px;
 	}
 	.welcome-text {
 		font-size: 15px;
 	}
+}
+
+@media (min-width: 320px) {
 }
 
 /* блок "консультация" */
