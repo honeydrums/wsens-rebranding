@@ -451,6 +451,34 @@
             </div>
         </div>
     </footer>
+    <div class="popup__wrapper">
+        <aside class="callback__popup">
+            <form action="" method="post" class="callback__popup-form">
+                <fieldset>
+                    <button type="button" class="close-button" aria-label="close">
+                        <span class="close-button-icon" aria-hidden="true"></span>
+                    </button>
+                    <legend class="lg-title__bold callback__popup-form__title">Заказать звонок</legend>
+                    <label for="userName">
+                        Ваше имя
+                        <input type="text" name="username" id="userName">
+                    </label>
+                    <label for="userPhone">
+                        Ваш телефона
+                        <input type="tel" name="userphone" id="userPhone">
+                    </label>
+                    <div class="checkbox-wrap">
+                        <label>
+                            <input type="checkbox" name="confirm-yes" checked onchange="checkPropButton()">
+                            <span class="check__box"></span>
+                            Я согласен на обработку персональных данных
+                        </label>
+                    </div>
+                    <button type="submit" class="main-btn__normal callback__popup-form__btn">Заказать звонок</button>
+                </fieldset>
+            </form>
+        </aside>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
