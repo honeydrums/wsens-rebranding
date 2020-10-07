@@ -30,6 +30,161 @@ body {
 	color: #333333;
 }
 
+/* заголовки */
+
+.xl-title__bold {
+	font-size: 46px;
+	font-weight: 800;
+	color: var(--dark-blue);
+}
+
+.lg-title__bold {
+	font-size: 36px;
+	font-weight: 800;
+	color: var(--dark-blue);
+}
+
+.md-title__normal {
+	font-size: 30px;
+	font-weight: 400;
+	color: var(--dark-blue);
+}
+
+.sm-title__bold {
+	font-size: 23px;
+	font-weight: 700;
+	color: var(--black);
+}
+
+@media (max-width: 1024px) {
+	.xl-title__bold {
+		font-size: 33px;
+	}
+	.lg-title__bold {
+		font-size: 26px;
+	}
+	.md-title__normal {
+		font-size: 21px;
+	}
+	.sm-title__bold {
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 680px) {
+	.xl-title__bold {
+		font-size: 26px;
+	}
+	.lg-title__bold {
+		font-size: 21px;
+	}
+	.md-title__normal {
+		font-size: 14px;
+	}
+}
+
+/* текст */
+
+.xl-text__normal {
+	font-size: 23px;
+	font-weight: 400;
+	color: var(--black);
+}
+
+.lg-text__normal {
+	font-size: 20px;
+	font-weight: 400;
+	color: var(--black);
+}
+
+.md-text__normal {
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--black);
+}
+
+.sm-text__normal {
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--black);
+}
+
+@media (max-width: 1024px) {
+	.xl-text__normal {
+		font-size: 17px;
+	}
+	.lg-text__normal {
+		font-size: 15px;
+	}
+	.md-text__normal {
+		font-size: 13px;
+	}
+	.sm-text__normal {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 680px) {
+	.xl-text__normal {
+		font-size: 15px;
+	}
+	.lg-text__normal {
+		font-size: 13px;
+	}
+}
+
+/* кнопки */
+
+.main-btn__normal {
+	padding: 17px 47px;
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--white);
+	background-color: var(--blue);
+	border: none;
+	transition: 0.5s;
+}
+
+.main-btn__normal:hover {
+	background-color: var(--main-blue);
+}
+
+/* кнопка "в наличии" */
+
+.in-stock__btn {
+	padding: 8px 15px;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 12px;
+	color: var(--white);
+	background: var(--light-green);
+	border-radius: 40px;
+}
+
+/* кнопка корзины */
+
+.product-card__cart-icon {
+	padding: 10px 10px 8px 8px;
+	width: 48px;
+	height: 48px;
+	background-color: var(--blue);
+	border-radius: 50%;
+	border: none;
+	transition: 0.5s;
+}
+
+.product-card__cart-icon:hover {
+	background-color: var(--main-blue);
+}
+
+/* ссылка "смотреть все" */
+
+.show-all__link {
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: underline;
+	color: var(--blue);
+}
 
 /* 12 колоночная сетка на гридах */
 
@@ -63,19 +218,6 @@ body {
 
 .bg__dark-blue {
 	background-color: var(--dark-blue);
-}
-
-
-/* btn - button, clr - color */
-
-.btn-bg__blue-clr__white {
-	background-color: var(--blue);
-	color: var(--white);
-}
-
-.btn-bg__blue-clr__white:hover {
-	background-color: var(--main-blue);
-	color: var(--white);
 }
 
 
@@ -173,7 +315,8 @@ img {
 .rating>span {
 	display: inline-block;
 	position: relative;
-	width: 1.1em;
+	width: 22px;
+	height: 22px;
 }
 
 .rating>span:hover:before,
@@ -286,7 +429,7 @@ img {
 	font-weight: 600;
 }
 
-.bottom-header__nav_phone span {
+.order-call-span {
 	width: max-content;
 	font-size: 12px;
 	line-height: normal;
@@ -383,6 +526,8 @@ img {
 /* первый блок */
 
 .welcome__wrapper {
+	max-height: 731px;
+	height: 50vw;
 	background: url('../img/welcome-bg.jpg') no-repeat;
     background-size: contain;
 }
@@ -390,16 +535,14 @@ img {
 .welcome {
 	background: url('../img/welcome-bg-kiosk.jpg') no-repeat right;
 	background-size: contain;
-	max-height: 731px;
-	height: 50.8vw;
+	max-height: inherit;
+	height: inherit;
 	grid-template-rows: repeat(7, 1fr);
 }
 
 .welcome-title {
 	grid-row: 4 / 5;
 	grid-column: span 7;
-	font-size: 46px;
-	font-weight: 900;
 }
 
 .welcome-text {
@@ -440,8 +583,246 @@ img {
 
 /* блок "консультация" */
 
+.consultation__wrapper {
+	max-height: 731px;
+	height: 100%;
+	padding: 93px 0;
+}
+
 .consultation {
-	display: none;
+	grid-template-rows: repeat(10, 10%);
+	background: url('../img/down-arrow.png') no-repeat top right;
+}
+
+.consultation img {
+	grid-row: 1 / 10;
+    grid-column: 1 / 13;
+}
+
+.consultation-title {
+	grid-row: 3 / 6;
+    grid-column: 17 / 25;
+    margin: 0;
+}
+
+.consultation-text {
+	grid-row: 7 / 8;
+	grid-column: 17 / 22;
+	margin: 0;
+}
+
+.consultation-button {
+	grid-row: 9/10;
+	grid-column: 17/22;
+	margin: 0;
+}
+
+/* блок причин */
+
+.reasons-title {
+	margin: 97px 0;
+}
+
+.reasons-list {
+	margin-bottom: 120px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.reasons-list__element {
+	max-width: 286px;
+	margin-bottom: 60px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reasons-list__element-title,
+.reasons-list__element-text {
+	margin: 23px 0 0;
+}
+
+
+/*  */
+
+.reasons-callback__wrapper {
+	background-image: url('../img/reasons-bg-decor.png'), url('../img/reasons-bg-kiosk.png');
+	background-position: top right, bottom right;
+	background-repeat: no-repeat;
+}
+
+.reasons-callback-title {
+	display: inline-block;
+	margin: 60px 0;
+}
+
+.reasons-callback-list {
+	margin: 0 380px 55px 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	counter-reset: honeydrums-counter;
+}
+
+.reasons-callback-list__element {
+	position: relative;
+	width: 300px;
+	padding-left: 80px;
+	margin-bottom: 30px;
+	counter-increment: honeydrums-counter;
+}
+
+.reasons-callback-list__element::before {
+	content: '0' counter(honeydrums-counter);
+	position: absolute;
+	left: 0;
+    font-size: 44px;
+    font-weight: 900;
+    color: var(--blue);
+}
+
+.reasons-callback-list__element-title {
+	margin: 0;
+}
+
+.reasons-callback-button {
+	margin-bottom: 150px;
+}
+
+/* футер */
+
+.main-footer__inner {
+	grid-template-rows: repeat(10, 1fr);
+	padding-top: 30px;
+}
+
+.main-footer__logo {
+	grid-row: 2/3;
+	display: block;
+}
+
+.main-footer__inner-wrapper {
+	display: flex;
+}
+
+.main-footer__nav-block {
+	display: flex;
+	flex-wrap: wrap;
+	grid-row: 4/9;
+	grid-column: 1/15;
+}
+
+.main-footer__nav-block__about,
+.main-footer__nav-block__services,
+.main-footer__nav-block__help {
+	width: 220px;
+	margin: 0 25px 25px 0;
+}
+
+.main-footer__contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	grid-row: 4/10;
+	grid-column: 17/25;
+	border-left: 1px solid white;
+}
+
+.main-footer__nav-block_title {
+	margin: 0 0 30px;
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--white);
+	opacity: 0.3;
+}
+
+
+.main-footer__nav-block_list-element {
+	position: relative;
+}
+
+.main-footer__nav-block_list-element a {
+	display: block;
+	margin: 0 0 8px 0;
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--white);
+}
+
+.main-footer__nav-block_list-element a::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: 1px;
+	background-color: var(--white);
+	transition: 0.5s;
+}
+
+.main-footer__nav-block_list-element a:hover::before {
+	width: 100%;
+}
+
+
+/* список соц сетей в футере */
+
+.main-footer__contacts-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    width: 70%;
+}
+
+.main-footer__contacts-list-element a {
+	display: block;
+}
+
+/* номер телефона */
+
+.order-call__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-footer__contacts-phone {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--white);
+}
+
+/* адрес */
+
+.address__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.contacts-address {
+	font-size: 14px;
+	line-height: 17px;
+	color: var(--white);
+}
+
+/* кнопка заказать звонок */
+
+.order-call-btn {
+	padding: 17px 47px;
+	border: 1px solid var(--white);
+	transition: 0.5s;
+}
+
+.order-call-btn:hover {
+	border: 1px solid var(--dark-blue);
+	background-color: var(--white);
+	color: var(--dark-blue);
 }
 
 /* временно уберём карту */
