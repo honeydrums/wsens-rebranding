@@ -161,7 +161,9 @@ body {
 /* кнопка "в наличии" */
 
 .in-stock__btn {
+	display: inline-block;
 	padding: 8px 15px;
+	margin-bottom: 7px;
 	font-size: 10px;
 	font-weight: 700;
 	line-height: 12px;
@@ -319,6 +321,7 @@ img {
 .rating {
 	unicode-bidi: bidi-override;
 	direction: rtl;
+	margin-bottom: 6px;
 }
 
 .rating>span {
@@ -658,7 +661,7 @@ img {
 
 .reasons-callback__wrapper {
 	background-image: url('../img/reasons-bg-decor.png'), url('../img/reasons-bg-kiosk.png');
-	background-position: 80vw top, right bottom;
+	background-position: 80vw top, right 255px;
 	background-repeat: no-repeat;
 }
 
@@ -699,7 +702,88 @@ img {
 }
 
 .reasons-callback-button {
-	margin-bottom: 150px;
+	margin-bottom: 111px;
+}
+
+/* блок "лучшее" */
+
+.the-best__wrapper {
+	background-color: rgba(37, 45, 63, 0.05);
+	background-image: url(../img/reasons-bg-kiosk.png);
+    background-position: right -633px;
+	background-repeat: no-repeat;
+}
+
+.the-best-title {
+	margin: 0 10px 48px;
+	padding-top: 107px;
+}
+
+.the-best-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 48px;
+}
+
+.the-best-list__element {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	max-width: 255px;
+	min-width: 190px;
+	max-height: 567px;
+	min-height: 424px;
+	padding: 2% 2% 3%;
+	margin: 0 10px 33px;
+	background-color: var(--white);
+	border-radius: 10px;
+}
+
+.the-best-list__element img {
+	display: block;
+	margin: 0 auto 15px;
+}
+
+.the-best-list__element-stock {
+	width: fit-content;
+}
+
+.the-best-list__element-rating {
+}
+
+.the-best-list__element-description  {
+	margin: 0 0 23px;
+	max-height: 80px;
+}
+
+.the-best-list__element-cost {
+	align-self: start;
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 700;
+	color: var(--black);
+}
+
+@media (max-width: 1440px) {
+	.the-best-list__element-cost {
+		font-size: 17px;
+		line-height: 18px;
+		font-weight: 700;
+		color: var(--black);
+	}
+}
+
+.the-best-ist__element-cart {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px 20px;
+}
+
+.the-best-all__link {
+	display: inline-block;
+	margin-bottom: 133px;
 }
 
 /* футер */
