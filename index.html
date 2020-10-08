@@ -9,14 +9,61 @@
     <title></title>
 </head>
 <body>
+    <div class="mobile-menu">
+        <a href="" class="mobile-menu__logo bg__dark-blue pd-x-20">
+            <img src="./img/white-logo.svg" alt="логотип компании Визард" width="200" height="28">
+        </a>
+        <ul class="mobile-menu__nav-list bg__dark-blue pd-x-20">
+            <li class="mobile-menu__nav-list_element">
+                <a href="">Каталог</a>
+            </li>
+            <li class="mobile-menu__nav-list_element">
+                <a href="">О компании</a>
+            </li>
+            <li class="mobile-menu__nav-list_element">
+                <a href="">Услуги</a>
+            </li>
+            <li class="mobile-menu__nav-list_element">
+                <a href="">Фотогалерея</a>
+            </li>
+            <li class="mobile-menu__nav-list_element">
+                <a href="">Контакты</a>
+            </li>
+            <li class="mobile-menu__nav-list_element">
+                <a href="">Помощь</a>
+            </li>
+        </ul>
+        <footer class="mobile-menu__footer centered grid-24-col pd-x-20 bg__dark-blue">
+            <form action="" method="get" class="mobile-menu__footer_search-form">
+                <input type="search" name="search" id="searchInput" class="display-none">
+            </form>
+            <ul class="mobile-menu__btns">
+                <li class="top-header__btns_search-label" title="Поиск по сайту" onclick="showSearchField()">
+                    <img src="img/search-icon.svg" alt="Поиск по сайту" width="16" height="16">
+                </li>
+                <li class="top-header__btns_cart" title="Корзина">
+                    <a href=""><img src="img/cart-icon.svg" alt="Корзина" width="16" height="16"></a>
+                </li>
+                <li class="top-header__btns_compare" title="Сравнение">
+                    <a href=""><img src="img/compare-icon.svg" alt="Сравнение" width="16" height="16"></a>
+                </li>
+                <li class="top-header__btns_favourite" title="Избранное">
+                    <a href=""><img src="img/favourite-icon.svg" alt="Избранное" width="16" height="16"></a>
+                </li>
+            </ul>
+            <div class="mobile-menu__login" title="Войти в личный кабинет">
+                <a href=""><img src="img/login-icon.svg" alt="вход в личный кабинет"></a>
+            </div>
+        </footer>
+    </div>
     <div class="top-header__wrapper bg__dark-blue">
-        <header class="top-header centered grid-24-col pd-x-10">
+        <header class="top-header centered grid-24-col pd-x-20">
             <address class="top-header__address"><img src="img/location-icon.svg" alt="Адрес"> г. Тверь, ул. Учительская, д. 59</address>
             <form action="" method="get" class="top-header__search-form">
                 <input type="search" name="search" id="searchInput" class="display-none">
             </form>
             <ul class="top-header__btns">
-                <li class="top-header__btns_search-label" title="Поиск по сайту">
+                <li class="top-header__btns_search-label" title="Поиск по сайту" onclick="showSearchField()">
                     <img src="img/search-icon.svg" alt="Поиск по сайту" width="16" height="16">
                 </li>
                 <li class="top-header__btns_cart" title="Корзина">
@@ -36,7 +83,7 @@
             </div>
         </header>
     </div>
-    <header class="bottom-header centered grid-24-col pd-x-10">
+    <header class="bottom-header centered grid-24-col pd-x-20">
         <a href="" class="header-logo">
             <img src="./img/main-logo.svg" alt="Логотип wsens" width="230" height="32">
         </a>
@@ -346,9 +393,9 @@
         </section>
     </main>
     <footer class="main-footer bg__dark-blue">
-        <div class="main-footer__inner grid-24-col centered">
+        <div class="main-footer__inner grid-24-col centered pd-x-20">
             <a href="" class="main-footer__logo">
-                <img src="./img/white-logo.png" alt="логотип компании Визард" width="250" height="35">
+                <img src="./img/white-logo.svg" alt="логотип компании Визард" width="250" height="35">
             </a>
             <div class="main-footer__nav-block">
                 <div class="main-footer__nav-block__about">
