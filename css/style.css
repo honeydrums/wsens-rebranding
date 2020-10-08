@@ -145,6 +145,15 @@ body {
 	transition: 0.5s;
 }
 
+.main-btn__normal:disabled {
+	background-color: lightgray;
+	user-select: none;
+}
+
+.main-btn__normal:disabled:hover {
+	background-color: lightgray;
+}
+
 .main-btn__normal:hover {
 	background-color: var(--main-blue);
 }
@@ -435,6 +444,7 @@ img {
 	line-height: normal;
 	border-bottom: 1px dashed;
 	color: var(--blue);
+	cursor: pointer;
 }
 
 .bottom-header__nav_phone img {
@@ -973,6 +983,7 @@ img {
 
 .callback__popup-form fieldset > label input {
 	margin: 5px 0 18px;
+	padding: 10px;
 	height: 55px;
 	background: #f2f2f2;
 	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
@@ -1025,12 +1036,22 @@ img {
 	background-image: url('../img/custom-checkbox/checked-box.svg');
 }
 
+/* кнопка в фокусе */
+
+.checkbox-wrap input:focus+.check__box {
+	outline: 1px solid var(--black);
+}
+
+.checkbox-wrap input:checked:focus+.check__box {
+	outline: 1px solid var(--black);
+}
+
 /* закрыть попап */
 
 .close-button {
     position: absolute;
-    top: 11px;
-    left: 96%;
+    top: 0;
+    right: 0;
     padding: 0;
     width: 24px;
     height: 24px;
@@ -1045,4 +1066,8 @@ img {
     height: 100%;
     background-size: contain;
     background-image: url(../img/close-button.svg);
+}
+
+.closed-popup {
+	display: none;
 }

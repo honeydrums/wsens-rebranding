@@ -22,11 +22,24 @@ let submitBtn = document.querySelector('input[type="submit"]');
 function checkPropButton() {
     if (checkBox.checked === false) {
         submitBtn.disabled = true;
-        submitBtn.classList.add('too-many-symbols__button');
         console.log('nope');
     } else {
         submitBtn.disabled = false;
-        submitBtn.classList.remove('too-many-symbols__button');
         console.log('yep');
     }
 };
+
+// попап
+
+function closePopup() {
+    let popupWrapper = document.querySelector('.popup__wrapper');
+    popupWrapper.classList.add('closed-popup');
+    
+    return console.log('попап закрыт');
+}
+
+function openPopup() {
+    let popupWrapper = document.querySelector('.popup__wrapper');
+    popupWrapper.classList.remove('closed-popup');
+    return console.log('попап открыт');
+}

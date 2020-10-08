@@ -69,7 +69,7 @@
         </nav>
         <div class="bottom-header__nav_phone">
             <a href="tel:+74997055933"><img src="img/phone-icon.svg" alt="Номер телефона" width="16" height="16">+7 499 705 59 33</a>
-            <span class="order-call-span">Заказать звонок</span>
+            <span class="order-call-span" onclick="openPopup()">Заказать звонок</span>
         </div>
     </header>
     <main>
@@ -84,7 +84,7 @@
                 <img src="./img/123132132132.jpg" alt="" class="right-side-clip" width="603" height="544">
                 <h2 class="consultation-title xl-title__bold">Избавиться от очередей на кассе легко</h2>
                 <p class="consultation-text xl-text__normal">Установите терминал самообслуживания</p>
-                <button class="consultation-button main-btn__normal">Консультация</button>
+                <button class="consultation-button main-btn__normal" onclick="openPopup()">Консультация</button>
             </section>
         </div>
         <section class="reasons centered">
@@ -128,7 +128,7 @@
                         <p class="reasons-callback-list__element-text sm-text__normal">Качественные комплектующие, гарантия качества, высокие компетенции при внедрении. Все это позволяет экономить на затратах на обслуживание</p>
                     </li>
                 </ol>
-                <button class="reasons-callback-button main-btn__normal">Заказать звонок</button>
+                <button class="reasons-callback-button main-btn__normal" onclick="openPopup()">Заказать звонок</button>
             </section>
         </div>
         <section class="the-best centered">
@@ -344,7 +344,7 @@
             <address class="contacts-address lg-text__normal">г. Тверь, ул. Учительская, д. 59</address>
             <a class="contacts-phone" href="tel:+74997055933">+7 499 705 59 33</a>
             <a class="contacts-mail" href="mailto:sale@wsens.ru">sale@wsens.ru</a>
-            <button class="main-btn__normal">Заказать звонок</button>
+            <button class="main-btn__normal" onclick="openPopup()">Заказать звонок</button>
             <img src="img/map.png" width="1440" height="720" alt="Карта с адресом компании">
         </section>
     </main>
@@ -439,7 +439,7 @@
                         <img src="img/phone-icon.svg" alt="Номер телефона" width="16" height="16">
                         +7 499 705 59 33
                     </a>
-                    <span class="order-call-span">Заказать звонок</span>
+                    <span class="order-call-span" onclick="openPopup()">Заказать звонок</span>
                 </div>
                 <div class="address__wrapper">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -447,15 +447,15 @@
                     </svg>
                     <address class="contacts-address">г. Тверь,<br>ул. Учительская, д. 59</address>
                 </div>
-                <button class="order-call-btn btn-bg__trnsprnt-clr__white">Заказать звонок</button>
+                <button class="order-call-btn btn-bg__trnsprnt-clr__white" onclick="openPopup()">Заказать звонок</button>
             </div>
         </div>
     </footer>
-    <div class="popup__wrapper">
+    <div class="popup__wrapper closed-popup" onclick="closePopup()">
         <aside class="callback__popup">
             <form action="" method="post" class="callback__popup-form">
                 <fieldset>
-                    <button type="button" class="close-button" aria-label="close">
+                    <button type="button" class="close-button" aria-label="close" onclick="closePopup()">
                         <span class="close-button-icon" aria-hidden="true"></span>
                     </button>
                     <legend class="lg-title__bold callback__popup-form__title">Заказать звонок</legend>
@@ -474,7 +474,7 @@
                             Я согласен на обработку персональных данных
                         </label>
                     </div>
-                    <button type="submit" class="main-btn__normal callback__popup-form__btn">Заказать звонок</button>
+                    <input type="submit" class="main-btn__normal callback__popup-form__btn" value="Заказать звонок">
                 </fieldset>
             </form>
         </aside>
