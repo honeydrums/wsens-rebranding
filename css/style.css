@@ -935,6 +935,20 @@ img {
 	margin: 33px 0 59px;
 }
 
+@media (max-width: 1024px) {
+	.articles-title {
+		margin: 0 0 32px;
+		padding-top: 40px;
+	}
+}
+
+@media (max-width: 860px) {
+	.articles-title {
+		margin: 0 0 23px;
+		padding-top: 20px;
+	}
+}
+
 /* футер */
 
 .main-footer__inner {
