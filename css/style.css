@@ -905,11 +905,34 @@ img {
 	background-image: url('../img/questions-bg.png');
 	background-position: 15px 45px;
 	background-repeat: no-repeat;
+	background-size: 307px 201px;
 }
 
 .questions-title {
-	margin: 0;
+	margin: 0 0 40px;
 	padding-top: 273px;
+}
+
+@media (max-width: 1024px) {
+	
+	.questions__wrapper {
+		background-position: 0 37px;
+		background-size: 206px 134px;
+	}
+	.questions-title {
+		margin: 0 0 28px;
+		padding-top: 192px;
+	}
+}
+
+@media (max-width: 860px) {
+	.questions__wrapper {
+		background-size: 144px 95px;
+	}
+	.questions-title {
+		margin: 0 0 20px;
+		padding-top: 157px;
+	}
 }
 
 /* блок статьи */
@@ -940,12 +963,24 @@ img {
 		margin: 0 0 32px;
 		padding-top: 40px;
 	}
+	.articles-list-element {
+		max-width: 262px;
+	}
+	.articles-list-element__pic img {
+		width: 262px;
+	}
 }
 
 @media (max-width: 860px) {
 	.articles-title {
 		margin: 0 0 23px;
 		padding-top: 20px;
+	}
+	.articles-list-element {
+		max-width: 280px;
+	}
+	.articles-list-element__pic img {
+		width: 280px;
 	}
 }
 
