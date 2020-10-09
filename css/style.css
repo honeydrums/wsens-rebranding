@@ -310,8 +310,10 @@ img {
 
 /* ...справа */
 
-.right-side-clip {
-	clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+@media (min-width: 861px) {
+	.right-side-clip {
+		clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+	}
 }
 
 
@@ -672,8 +674,8 @@ img {
 	background: url('../img/down-arrow.png') no-repeat top right;
 }
 
-.consultation img {
-	grid-row: 1 / 10;
+.consultation picture {
+	grid-row: 1 / -1;
     grid-column: 1 / 13;
 }
 
@@ -693,6 +695,21 @@ img {
 	grid-row: 9/10;
 	grid-column: 17/22;
 	margin: 0;
+}
+
+
+@media (max-width: 1024px) {
+	.consultation img {
+		width: 439px;
+		height: 385px;
+	}
+}
+
+@media (max-width: 860px) {
+	.consultation img {
+		width: 219px;
+		height: 463px;
+	}
 }
 
 /* блок причин */
@@ -981,6 +998,44 @@ img {
 	}
 	.articles-list-element__pic img {
 		width: 280px;
+	}
+}
+
+/* блок партнёры */
+
+.partners-title {
+	margin: 0 0 165px;
+	padding-top: 57px;
+}
+
+.partners-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.partners-list-element {
+	margin: 0 55px 55px;
+}
+
+@media (max-width: 1024px) {
+	.partners-title {
+		margin: 0 0 85px;
+		padding-top: 40px;
+	}
+}
+
+@media (max-width: 680px) {
+	.partners-title {
+		margin: 0 0 70px;
+		padding-top: 20px;
+	}
+	.partners-list-element img {
+		width: 105px;
+	}
+	.partners-list-element {
+		margin: 0 5px 55px;
 	}
 }
 

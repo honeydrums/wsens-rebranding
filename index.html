@@ -106,7 +106,11 @@
         </div>
         <div class="consultation__wrapper">
             <section class="consultation centered grid-24-col">
-                <img src="./img/123132132132.jpg" alt="" class="right-side-clip" width="603" height="544">
+                <picture>
+                    <source media="(max-width: 860px)" srcset="./img/consultation-sm.png" sizes="219">
+                    <source media="(max-width: 1024px)" srcset="./img/consultation-md.png" sizes="439">
+                    <img src="./img/consultation-xl.jpg" alt="" class="right-side-clip" width="603" height="544">
+                </picture>
                 <h2 class="consultation-title xl-title__bold">Избавиться от очередей на кассе легко</h2>
                 <p class="consultation-text xl-text__normal">Установите терминал самообслуживания</p>
                 <button class="consultation-button main-btn__normal" onclick="openPopup()">Консультация</button>
