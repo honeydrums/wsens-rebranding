@@ -355,8 +355,11 @@ img {
 		display: block;
 	}
 	.mobile-menu {
-		position: relative;
-		height: 100vh;
+		position: absolute;
+    	top: 0;
+    	bottom: 0;
+    	right: 0;
+    	left: 0;
 		z-index: 10;
 	}
 	.mobile-menu__logo {
@@ -387,35 +390,10 @@ img {
 		font-weight: 600;
 		color: var(--white);
 	}
-	.mobile-menu__footer {
+	.top-header__sticky-bottom {
 		position: fixed;
 		bottom: 0;
 		z-index: 10;
-		height: 45px;
-    	align-items: center;
-    	color: var(--white);
-	}
-	.mobile-menu__footer_search-form {
-		display: none;
-		grid-column: 11 / -8;
-	}
-	.mobile-menu__footer_search-form input {
-		width: 100%;
-	}
-	.mobile-menu__btns {
-		display: flex;
-		place-content: space-between;
-		grid-column: span 11;
-	}
-	.mobile-menu__login {
-		grid-column: -2/-1;
-	}
-	.mobile-menu__login a {
-		display: flex;
-    	color: var(--white);
-	}
-	.mobile-menu__login a img {
-		margin: 0 16px;
 	}
 }
 
@@ -580,15 +558,22 @@ img {
 	.top-header__search-form input {
 		width: 100%;
 	}
+	.top-header__login a img {
+		margin: 0;
+	}
 	.search-mobile {
 		display: inline-block;
 		position: absolute;
 		left: 0;
 		width: 100%;
-		margin-top: -45px;
+		margin-top: 45px;
+		z-index: 15;
 		padding: 11px;
 		background-color: var(--dark-blue);
-    }
+	}
+	.top-header__sticky-bottom .search-mobile {
+		margin: 0;
+	}
     .bottom-header__nav {
         grid-column: -1 / -2;
     }
@@ -1111,8 +1096,11 @@ img {
 }
 
 @media (max-width: 680px) {
+	.is-active {
+
+	}
 	.hamburger {
-		padding: 15px 15px;
+		padding: 0;
 		display: inline-block;
 		cursor: pointer;
 		transition-property: opacity, filter;
@@ -1126,20 +1114,14 @@ img {
 		margin: 0;
         overflow: visible;
 	}
-	.hamburger:hover {
-		opacity: 0.7;
-	}
-	.hamburger.is-active:hover {
-		opacity: 0.7;
-	}
 	.hamburger.is-active .hamburger-inner,
 	.hamburger.is-active .hamburger-inner::before,
 	.hamburger.is-active .hamburger-inner::after {
 		background-color: var(--white);
 	}
 	.hamburger-box {
-		width: 40px;
-		height: 24px;
+		width: 23px;
+		height: 20px;
 		display: inline-block;
         position: relative;
         z-index: 10;
@@ -1152,7 +1134,7 @@ img {
 	.hamburger-inner,
 	.hamburger-inner::before,
 	.hamburger-inner::after {
-		width: 40px;
+		width: 23px;
 		height: 4px;
 		background-color: var(--black);
 		border-radius: 4px;

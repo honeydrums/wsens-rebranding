@@ -33,28 +33,6 @@
                 <a href="">Помощь</a>
             </li>
         </ul>
-        <footer class="mobile-menu__footer centered grid-24-col pd-x-20 bg__dark-blue">
-            <form action="" method="get" class="mobile-menu__footer_search-form">
-                <input type="search" name="search" id="searchInput" class="display-none">
-            </form>
-            <ul class="mobile-menu__btns">
-                <li class="top-header__btns_search-label" title="Поиск по сайту" onclick="showSearchField()">
-                    <img src="img/search-icon.svg" alt="Поиск по сайту" width="16" height="16">
-                </li>
-                <li class="top-header__btns_cart" title="Корзина">
-                    <a href=""><img src="img/cart-icon.svg" alt="Корзина" width="16" height="16"></a>
-                </li>
-                <li class="top-header__btns_compare" title="Сравнение">
-                    <a href=""><img src="img/compare-icon.svg" alt="Сравнение" width="16" height="16"></a>
-                </li>
-                <li class="top-header__btns_favourite" title="Избранное">
-                    <a href=""><img src="img/favourite-icon.svg" alt="Избранное" width="16" height="16"></a>
-                </li>
-            </ul>
-            <div class="mobile-menu__login" title="Войти в личный кабинет">
-                <a href=""><img src="img/login-icon.svg" alt="вход в личный кабинет"></a>
-            </div>
-        </footer>
     </div>
     <div class="top-header__wrapper bg__dark-blue">
         <header class="top-header centered grid-24-col pd-x-20">
@@ -88,7 +66,7 @@
             <img src="./img/main-logo.svg" alt="Логотип wsens" width="230" height="32">
         </a>
         <nav class="bottom-header__nav">
-            <button class="hamburger hamburger--squeeze" type="button">
+            <button class="hamburger hamburger--squeeze" type="button" onclick="showMobileMenu()">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>

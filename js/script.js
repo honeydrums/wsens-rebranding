@@ -2,17 +2,25 @@
 function showSearchField() {
     let searchIcon = document.querySelector('.top-header__btns_search-label');
     let searchInput = document.querySelector('#searchInput');
-    let topHeader = document.querySelector('.top-header');
     let searchForm = document.querySelector('.top-header__search-form');
 
     searchInput.classList.toggle('display-none');
-    topHeader.classList.toggle('top-header__mobile');
     searchForm.classList.toggle('search-mobile');
 };
 
 document.querySelector('.hamburger').addEventListener('click', function() {
     this.classList.toggle('is-active');
 });
+
+// покажем мобильное меню
+
+function showMobileMenu() {
+    let mobileMenu = document.querySelector('.mobile-menu');
+    let headerBtns = document.querySelector('.top-header__wrapper');
+
+    mobileMenu.classList.toggle('mobile-menu__show');
+    headerBtns.classList.toggle('top-header__sticky-bottom')
+}
 
 // отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
 
