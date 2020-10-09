@@ -227,7 +227,7 @@ body {
 
 @media (max-width: 1200px) {
 	.centered {
-		/* padding: 0 20px; */
+		padding: 0 20px;
 	}
 }
 
@@ -897,6 +897,42 @@ img {
 
 .advantages-list-element-text {
 	margin: 0;
+}
+
+/* блок вопрос-ответ */
+
+.questions__wrapper {
+	background-image: url('../img/questions-bg.png');
+	background-position: 15px 45px;
+	background-repeat: no-repeat;
+}
+
+.questions-title {
+	margin: 0;
+	padding-top: 273px;
+}
+
+/* блок статьи */
+
+.articles-title {
+	margin: 0 0 45px;
+	padding-top: 57px;
+}
+
+.articles-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.articles-list-element {
+	max-width: 350px;
+	border-bottom: 4px solid #E0E0E0;
+	margin-bottom: 39px;
+}
+
+.articles-list-element__description p {
+	margin: 33px 0 59px;
 }
 
 /* футер */
