@@ -30,6 +30,20 @@ body {
 	color: #333333;
 }
 
+/* flex в строку */
+
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.flex-row-reverse {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+
 /* заголовки */
 
 .xl-title__bold {
@@ -277,11 +291,21 @@ address {
 }
 
 
-/* внутренние отступы для шапки (padding 10px) */
+/* внутренние отступы для шапки */
 
 @media (max-width: 1110px) {
 	.pd-x-20 {
 		padding: 0 20px;
+	}
+}
+
+.pd-y-95 {
+	padding: 95px 0;
+}
+
+@media (max-width: 1200px) {
+	.pd-y-95 {
+		padding: 67px 20px;
 	}
 }
 
@@ -879,7 +903,74 @@ img {
 .automation,
 .self-serv-market,
 .automation-retail {
-	background: url('../img/double-down-arrow.png') top center no-repeat ;
+	background: url('../img/double-down-arrow.png') center 95px no-repeat ;
+}
+
+/*  */
+
+.description-block {
+	width: 50%;
+	align-self: center;
+}
+
+.flex-row-reverse .description-block {
+	padding-right: 22px;
+}
+
+.flex-row .description-block {
+	padding-left: 28px;
+}
+
+.self-serv img,
+.automation img,
+.self-serv-market img,
+.automation-retail img {
+	width: 50%;
+	object-fit: contain;
+}
+
+@media (max-width: 680px) {
+	.self-serv,
+	.automation,
+	.self-serv-market,
+	.automation-retail {
+		position: relative;
+		min-height: 382px;
+    	height: 130vw;
+		background-size: 108px 97px;
+		margin-bottom: 32px;
+		overflow: hidden;
+	}
+	.self-serv,
+	.self-serv-market {
+		padding: 0;
+		background-position: -20%;
+	}
+	.automation, 
+	.automation-retail{
+		padding: 0;
+		background-position: 120%;
+	}
+	.self-serv img,
+	.automation img,
+	.self-serv-market img,
+	.automation-retail img {
+		position: absolute;
+		width: 140%;
+		z-index: -1;
+		filter: brightness(0.5);
+	}
+	.flex-row .description-block,
+	.flex-row-reverse .description-block {
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		padding: 0 20px;
+	}
+	.description-block h2,
+	.description-block p {
+		color: var(--white);
+	}
 }
 
 /* преимущества */
@@ -914,6 +1005,18 @@ img {
 
 .advantages-list-element-text {
 	margin: 0;
+}
+
+@media (max-width: 1080px) {
+	.advantages-list {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 680px) {
+	.advantages-list-element {
+		max-width: 275px;
+	}
 }
 
 /* блок вопрос-ответ */
