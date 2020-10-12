@@ -30,6 +30,12 @@ body {
 	color: #333333;
 }
 
+/* запрет скролла */
+
+.no-scroll {
+	overflow: hidden;
+}
+
 /* flex в строку */
 
 .flex-row {

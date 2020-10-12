@@ -19,7 +19,8 @@ function showMobileMenu() {
     let headerBtns = document.querySelector('.top-header__wrapper');
 
     mobileMenu.classList.toggle('mobile-menu__show');
-    headerBtns.classList.toggle('top-header__sticky-bottom')
+    headerBtns.classList.toggle('top-header__sticky-bottom');
+    document.body.classList.toggle('no-scroll');
 }
 
 // отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
@@ -42,6 +43,7 @@ function checkPropButton() {
 function closePopup() {
     let popupWrapper = document.querySelector('.popup__wrapper');
     popupWrapper.classList.add('closed-popup');
+    document.body.classList.remove('no-scroll');
     
     return console.log('попап закрыт');
 }
@@ -49,6 +51,8 @@ function closePopup() {
 function openPopup() {
     let popupWrapper = document.querySelector('.popup__wrapper');
     popupWrapper.classList.remove('closed-popup');
+    document.body.classList.add('no-scroll');
+
     return console.log('попап открыт');
 }
 
