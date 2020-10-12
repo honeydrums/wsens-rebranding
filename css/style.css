@@ -813,6 +813,30 @@ img {
 	margin: 23px 0 0;
 }
 
+@media (max-width: 1024px) {
+	.reasons-title {
+		margin: 0 0 54px;
+	}
+}
+
+@media (max-width: 860px) {
+	.reasons-title {
+		margin: 0 0 34px;
+		font-size: 21px;
+	}
+	.reasons-list {
+		margin-bottom: 15px;
+		justify-content: center;
+	}
+	.reasons-list__element {
+		align-items: center;
+	}
+	.reasons-list__element-title,
+	.reasons-list__element-text {
+		text-align: center;
+	}
+}
+
 
 /*  */
 
