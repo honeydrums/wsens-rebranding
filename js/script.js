@@ -51,3 +51,14 @@ function openPopup() {
     popupWrapper.classList.remove('closed-popup');
     return console.log('попап открыт');
 }
+
+// показать ответ
+
+let question = document.getElementsByClassName('questions-list-element__title');
+let answer = document.getElementsByClassName('questions-list__answer');
+
+for (let i = 0; i < question.length; i++) {
+  question[i].addEventListener('click', function() {
+    answer[i].classList.toggle('show-answer')
+  });
+};

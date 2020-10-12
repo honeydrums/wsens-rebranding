@@ -1206,6 +1206,30 @@ img {
 	padding-top: 273px;
 }
 
+.questions-list-element__title {
+	cursor: pointer;
+}
+
+.questions-list-element__title::after {
+	content:'';
+	display: inline-block;
+	border: solid var(--dark-blue);
+	border-width: 0 3px 3px 0;
+	padding: 5px;
+	margin-left: 20px;
+	transform: rotate(45deg);
+}
+
+.questions-list__answer {  
+	display: none;
+	height: 0;
+}
+
+.show-answer {
+	display: inline-block;
+	height: 100%;
+}
+
 @media (max-width: 1024px) {
 	
 	.questions__wrapper {
