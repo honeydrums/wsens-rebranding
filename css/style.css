@@ -1057,6 +1057,15 @@ img {
 	}
 }
 
+@media (max-width: 680px) {
+	.the-best-list {
+		justify-content: center;
+	}
+	.the-best-all__link {
+		margin-bottom: 29px;
+	}
+}
+
 /* двойные стрелки вниз для фона */
 
 .self-serv,
