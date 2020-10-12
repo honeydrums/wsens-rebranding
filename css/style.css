@@ -789,12 +789,17 @@ img {
 
 /* блок причин */
 
+.reasons__wrapper {
+	background-color: rgba(37, 45, 63, 0.03);
+}
+
 .reasons-title {
-	margin: 97px 0;
+	padding-top: 97px;
+	margin: 0 0 97px 0;
 }
 
 .reasons-list {
-	margin-bottom: 120px;
+	padding-bottom: 120px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -815,17 +820,19 @@ img {
 
 @media (max-width: 1024px) {
 	.reasons-title {
+		padding-top: 54px;
 		margin: 0 0 54px;
 	}
 }
 
 @media (max-width: 860px) {
 	.reasons-title {
+		padding-top: 34px;
 		margin: 0 0 34px;
 		font-size: 21px;
 	}
 	.reasons-list {
-		margin-bottom: 15px;
+		padding-bottom: 15px;
 		justify-content: center;
 	}
 	.reasons-list__element {
@@ -878,12 +885,77 @@ img {
     color: var(--blue);
 }
 
+.reasons-callback-list__element::after {
+	content: '';
+	position: absolute;
+	top: 35%;
+	left: 0;
+	width: 45px;
+	height: 11px;
+	background-color: var(--blue);
+	transform: skewY(35deg);
+}
+
 .reasons-callback-list__element-title {
 	margin: 0;
 }
 
 .reasons-callback-button {
 	margin-bottom: 111px;
+}
+
+@media (max-width: 1024px) {
+	.reasons-callback__wrapper {
+		background-size: 292px;
+	}
+	.reasons-callback-list__element::after {
+		top: 70%;
+	}
+	.reasons-callback-list {
+		margin: 0 300px 38px 0;
+	}
+}
+
+@media (max-width: 940px) {
+	.reasons-callback-button {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 680px) {
+	.reasons-callback__wrapper {
+		background-image: none;
+	}
+	.reasons-callback {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.reasons-callback-title {
+		font-size: 21px;
+	}
+	.reasons-callback-list {
+		margin: 0 0 30px 0;
+		justify-content: center;
+	}
+	.reasons-callback-list__element {
+		padding-left: 50px;
+	}
+	.reasons-callback-list__element::before {
+		font-size: 31px;
+	}
+	.reasons-callback-list__element::after {
+		top: 55%;
+		width: 36px;
+    	height: 9px;
+	}
+	.reasons-callback-list__element-title,
+	.reasons-callback-list__element-text {
+		max-width: 212px;
+	}
+	.reasons-callback-button {
+		margin: 0 auto 30px;
+	}
 }
 
 /* блок "лучшее" */
@@ -970,6 +1042,19 @@ img {
 .the-best-all__link {
 	display: inline-block;
 	margin-bottom: 133px;
+}
+
+@media (max-width: 1024px) {
+	.the-best__wrapper {
+		background-position: right -405px;
+    	background-size: 292px;
+	}
+}
+
+@media (max-width: 940px) {
+	.the-best__wrapper {
+		background-image: none;
+	}
 }
 
 /* двойные стрелки вниз для фона */
@@ -1091,6 +1176,10 @@ img {
 @media (max-width: 680px) {
 	.advantages-list-element {
 		max-width: 275px;
+	}
+	.advantages-list-element-title,
+	.advantages-list-element-text {
+		width: 100%;
 	}
 }
 
