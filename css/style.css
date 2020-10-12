@@ -605,6 +605,7 @@ img {
 	}
 	.top-header__sticky-bottom .search-mobile {
 		margin: 0;
+		bottom: 45px;
 	}
     .bottom-header__nav {
         grid-column: -1 / -2;
@@ -938,6 +939,7 @@ img {
 		flex-direction: column;
 	}
 	.reasons-callback-title {
+		margin: 20px 0 40px;
 		font-size: 21px;
 	}
 	.reasons-callback-list {
@@ -1067,6 +1069,9 @@ img {
 	.the-best-list {
 		justify-content: center;
 	}
+	.the-best-list__element {
+		padding: 20px 25px 30px 25px;
+	}
 	.the-best-all__link {
 		margin-bottom: 29px;
 	}
@@ -1118,7 +1123,7 @@ img {
 	}
 	.self-serv,
 	.self-serv-market {
-		padding: 0;
+		padding: 20px 0;
 		background-position: -20%;
 	}
 	.automation, 
@@ -1297,7 +1302,7 @@ img {
 @media (max-width: 860px) {
 	.articles-title {
 		margin: 0 0 23px;
-		padding-top: 20px;
+		padding-top: 40px;
 	}
 	.articles-list-element {
 		max-width: 280px;
