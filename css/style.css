@@ -1374,19 +1374,7 @@ img {
 	position: relative;
     width: 60%;
 	z-index: 1;
-    background-color: white;
-}
-
-.contacts-info:after {
-	position: absolute;
-	content: '';
-	width: 10px;
-    height: 100%;
-	background-color: var(--white);
-	opacity: 0.3;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    background: linear-gradient(105deg, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0.5) 65%,rgba(255, 255, 255, 0.5) 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 100%);
 }
 
 .contacts-phone,
@@ -1425,14 +1413,45 @@ img {
 @media (max-width: 1024px) {
 	.contacts-title {
 		margin: 0 0 40px;
-		padding-top: 40px;
+		padding-top: 127px;
 	}
 }
 
 @media (max-width: 860px) {
+	.contacts {
+		padding: 0;
+		flex-direction: column-reverse;
+		height: 769px;
+	}
+	.contacts-info {
+		padding: 0 20px 64px;
+		width: 100%;
+		background: linear-gradient(15deg, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0.5) 65%,rgba(255, 255, 255, 0.5) 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 100%);
+	}
 	.contacts-title {
-		margin: 0 0 40px;
-		padding-top: 127px;
+		margin: 0 0 15px;
+		padding-top: 200px;
+	}
+	.contacts-phone,
+	.contacts-mail,
+	.contacts-address {
+		margin-bottom: 15px;
+	}
+	.contacts-mail {
+		margin-bottom: 40px;
+	}
+	.contacts-phone a,
+	.contacts-mail a {
+		font-size: 15px;
+	}
+	.contacts-map {
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.contacts-map * {
+		width: 100%;
+		height: 65%;
 	}
 }
 
