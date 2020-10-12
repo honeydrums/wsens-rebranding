@@ -1075,6 +1075,10 @@ img {
 	.the-best-all__link {
 		margin-bottom: 29px;
 	}
+	.the-best-title {
+		margin: 0 0 28px;
+		padding-top: 20px;
+	}
 }
 
 /* двойные стрелки вниз для фона */
