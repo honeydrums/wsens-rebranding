@@ -631,58 +631,72 @@ img {
 
 .welcome__wrapper {
 	max-height: 731px;
-	height: 50vw;
+	height: 50.8vw;
 	background: url('../img/welcome-bg.jpg') no-repeat;
     background-size: contain;
 }
 
 .welcome {
-	background: url('../img/welcome-bg-kiosk.jpg') no-repeat right;
 	background-size: contain;
 	max-height: inherit;
 	height: inherit;
-	grid-template-rows: repeat(7, 1fr);
+	justify-content: space-between;
+}
+
+.welcome__description-block {
+	width: 50%;
+    align-self: center;
+}
+
+.welcome img {
+	height: 100%;
 }
 
 .welcome-title {
-	grid-row: 4 / 5;
-	grid-column: span 7;
+	margin: 0 0 29px 0;
+	padding: 0;
 }
 
 .welcome-text {
-	grid-row: 5 / 6;
-	grid-column: span 5;
 	margin: 0;
 	font-size: 23px;
 }
 
 @media (max-width: 1110px) {
 	.welcome-title {
-		padding-left: 20px;
+		margin: 0 0 20px 0;
 		font-size: 33px;
 	}
 	.welcome-text {
-		padding-left: 20px;
 		font-size: 17px;
 	}
 }
 
 @media (max-width: 680px) {
 	.welcome {
-		/* height: 136vw; */
+		flex-direction: column-reverse;
+	}
+	.welcome img {
+		width: 50%;
+		margin-left: auto;
 	}
 	.welcome__wrapper {
-		background: url(../img/welcome-bg-mobile.jpg) no-repeat;
+		background: url('../img/welcome-bg-mobile.jpg') no-repeat;
+    	background-position: right;
+		background-size: contain;
+		height: 100%;
+	}
+	.welcome__description-block {
+		width: 100%;
 	}
 	.welcome-title {
 		font-size: 26px;
+		margin: 0 0 13px 0;
+		padding: 20px 0 0;
 	}
 	.welcome-text {
 		font-size: 15px;
 	}
-}
-
-@media (min-width: 320px) {
 }
 
 /* блок "консультация" */
@@ -694,33 +708,40 @@ img {
 }
 
 .consultation {
-	grid-template-rows: repeat(10, 10%);
 	background: url('../img/down-arrow.png') no-repeat top right;
 }
 
+.consultation__description-block {
+	width: 50%;
+	padding-left: 75px;
+	align-self: center;
+}
+
 .consultation picture {
-	grid-row: 1 / -1;
-    grid-column: 1 / 13;
+	width: 50%;
 }
 
 .consultation-title {
-	grid-row: 3 / 6;
-    grid-column: 17 / 25;
-    margin: 0;
+    margin: 0 0 27px;
 }
 
 .consultation-text {
-	grid-row: 7 / 8;
-	grid-column: 17 / 22;
-	margin: 0;
+	margin: 0 0 53px;
 }
 
 .consultation-button {
-	grid-row: 9/10;
-	grid-column: 17/22;
 	margin: 0;
 }
 
+@media (max-width: 1110px) {
+	.consultation-title {
+		margin: 0 0 19px;
+	}
+	
+	.consultation-text {
+		margin: 0 0 38px;
+	}
+}
 
 @media (max-width: 1024px) {
 	.consultation img {
@@ -730,9 +751,33 @@ img {
 }
 
 @media (max-width: 860px) {
+	.consultation {
+		min-height: 568px;
+		position: relative;
+		background-position-y: 20%;
+	}
+	.consultation picture {
+    	margin: 10% 0;
+		position: absolute;
+		right: 0;
+		z-index: -1;
+	}
 	.consultation img {
+		position: absolute;
+		right: 0;
 		width: 219px;
 		height: 463px;
+	}
+	.consultation__description-block {
+		width: 100%;
+		padding: 0;
+	}
+	.consultation-title {
+		margin: 0 0 15px;
+	}
+	
+	.consultation-text {
+		margin: 0 0 34px;
 	}
 }
 
