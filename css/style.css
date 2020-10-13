@@ -948,11 +948,19 @@ img {
 }
 
 
-/*  */
+/* первый блок причин */
+
+.reasons-callback {
+	background-image: url('../img/reasons-bg-kiosk.png');
+	background-position: bottom -60px right 0;
+	background-repeat: no-repeat;
+}
 
 .reasons-callback__wrapper {
-	background-image: url('../img/reasons-bg-decor.png'), url('../img/reasons-bg-kiosk.png');
-	background-position: 80vw top, right 255px;
+	max-width: 1860px;
+    margin: 0 auto;
+	background-image: url('../img/reasons-bg-decor.png');
+	background-position: top 26px right 5vw;
 	background-repeat: no-repeat;
 }
 
@@ -1014,9 +1022,18 @@ img {
 	margin-bottom: 111px;
 }
 
+@media (max-width: 1440px) {
+	.reasons-callback__wrapper {
+		background-position: top 26px right 0%;
+	}
+}
+
 @media (max-width: 1024px) {
 	.reasons-callback__wrapper {
 		background-size: 292px;
+	}
+	.reasons-callback {
+		background-size: 320px;
 	}
 	.reasons-callback-list__element::after {
 		top: 70%;
@@ -1045,7 +1062,8 @@ img {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
-		        flex-direction: column;
+				flex-direction: column;
+		background-image: none;
 	}
 	.reasons-callback-title {
 		margin: 20px 0 40px;
@@ -1081,8 +1099,11 @@ img {
 
 .the-best__wrapper {
 	background-color: rgba(37, 45, 63, 0.05);
-	background-image: url(../img/reasons-bg-kiosk.png);
-    background-position: right -633px;
+}
+
+.the-best {
+	background-image: url('../img/reasons-bg-kiosk.png');
+    background-position: right -629px;
 	background-repeat: no-repeat;
 }
 
@@ -1181,15 +1202,9 @@ img {
 }
 
 @media (max-width: 1024px) {
-	.the-best__wrapper {
-		background-position: right -405px;
-    	background-size: 292px;
-	}
-}
-
-@media (max-width: 940px) {
-	.the-best__wrapper {
-		background-image: none;
+	.the-best {
+		background-position: right -469px;
+		background-size: 320px;
 	}
 }
 
@@ -1208,6 +1223,9 @@ img {
 	.the-best-title {
 		margin: 0 0 28px;
 		padding-top: 20px;
+	}
+	.the-best {
+		background-image: none;
 	}
 }
 
@@ -1351,6 +1369,14 @@ img {
 }
 
 /* блок вопрос-ответ */
+
+@media (min-width: 1440px) {
+	.questions__wrapper {
+		max-width: 1460px;
+		margin: 0 auto;
+		background-position: top 15px left 0;
+	}
+}
 
 .questions__wrapper {
 	background-image: url('../img/questions-bg.png');
