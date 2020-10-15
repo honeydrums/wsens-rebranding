@@ -516,6 +516,20 @@ img {
 	grid-column: 16 / -7;
 }
 
+.top-header__btns li:not(:first-child):after {
+	content: '4';
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--black);
+    position: absolute;
+    margin: -6px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: var( --white);
+}
+
 .top-header__btns_search-label {
 	cursor: pointer;
 }
