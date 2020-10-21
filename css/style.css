@@ -535,6 +535,7 @@ img {
     color: var(--black);
     position: absolute;
     margin: -6px;
+    padding-top: 1px;
     width: 17px;
     height: 17px;
     border-radius: 50%;
@@ -578,6 +579,7 @@ img {
 }
 
 .bottom-header {
+    position: relative;
     height: 83px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -600,7 +602,58 @@ img {
     justify-content: space-between;
 }
 
-.bottom-header__nav-list_element a {
+.bottom-header__nav-list_element {
+    align-self: center;
+}
+
+@media (min-width: 680px) {
+    .nav-list_element__hover {
+        position: absolute;
+        top: 83px;
+        right: 0;
+        left: 0;
+        width: 96%;
+        min-height: 100px;
+        /* временный цвет */
+        background-color: var(--light-gray);
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transition: 0.3s;
+        z-index: -1;
+    }
+    .nav__hover-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .nav__hover-list_element {
+        display: grid;
+        grid-template-columns: 25% 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 33.3%;
+    }
+    .nav__hover-list_element-title {
+        font-weight: bold;
+    }
+    .nav__hover-list_element img {
+        grid-row: 1/-1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-list_element__hover {
+        margin: 0 20px;
+    }
+}
+
+.bottom-header__nav-list_element:hover>.nav-list_element__hover {
+    opacity: 1;
+    z-index: initial;
+}
+
+.bottom-header__nav-list_element>a {
+    padding: 2rem 0;
     font-size: 14px;
     -webkit-transition: text-shadow 0.3s;
     -o-transition: text-shadow 0.3s;
