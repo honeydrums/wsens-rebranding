@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <title></title>
 </head>
+
 <body>
     <div class="mobile-menu">
         <a href="" class="mobile-menu__logo bg__dark-blue pd-x-20">
@@ -37,21 +40,178 @@
     <div class="top-header__wrapper bg__dark-blue">
         <header class="top-header centered grid-24-col pd-x-20">
             <address class="top-header__address"><img src="img/location-icon.svg" alt="Адрес"> г. Тверь, ул. Учительская, д. 59</address>
-            <form action="" method="get" class="top-header__search-form">
-                <input type="search" name="search" id="searchInput" class="display-none">
-            </form>
+            <!-- <form action="" method="get" class="top-header__search-form">
+                    <input type="search" name="search" id="searchInput" class="display-none">
+                </form> -->
+            <div class="search-form-wrapper search-form-wrapper__hide">
+                <form action="" method="post" class="centered">
+                    <button type="submit" class="material-icons search-btn">search</button>
+                    <input type="search" placeholder="Поиск по сайту" class="input-field">
+                    <button type="button" class="material-icons close-btn" onclick="eraseInput()">close</button>
+                </form>
+                <div class="ns-bitrix c-search-title c-search-title-popup-1 search-title-results intec-content-wrap centered">
+                    <div class="search-title-items">
+                        <div class="search-title-item search-title-item-hover">
+                            <div class="search-title-item-wrapper intec-content">
+                                <div class="search-title-item-wrapper-2 intec-content-wrapper">
+                                    <div class="search-title-item-wrapper-3 intec-grid intec-grid-nowrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                        <div class="search-title-item-image-wrap intec-grid-item-auto">
+                                            <a href="/catalog/terminaly_samoobsluzhivaniya_dlya_fastfuda/522/" class="search-title-item-image intec-image">
+                                                <div class="intec-aligner"></div>
+                                            </a>
+                                        </div>
+                                        <div class="search-title-item-content-wrap intec-grid-item intec-grid-item-shrink-1">
+                                            <div class="intec-grid intec-grid-nowrap intec-grid-600-wrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                                <div class="intec-grid-item intec-grid-item-600-1 intec-grid-item-shrink-1">
+                                                    <div class="search-title-item-content">
+                                                        <a href="/catalog/terminaly_samoobsluzhivaniya_dlya_fastfuda/522/" class="search-title-item-name intec-cl-text-hover">
+                                                            <b>Терминал</b> Самообслужвания Премиум Т-1000 Напольный </a>
+                                                        <a href="/catalog/terminaly_samoobsluzhivaniya_dlya_fastfuda/" class="search-title-item-section intec-cl-text-hover">
+                                                                            Терминалы самообслуживания для Фастфуда                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-title-item search-title-item-hover">
+                            <div class="search-title-item-wrapper intec-content">
+                                <div class="search-title-item-wrapper-2 intec-content-wrapper">
+                                    <div class="search-title-item-wrapper-3 intec-grid intec-grid-nowrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                        <div class="search-title-item-content-wrap intec-grid-item intec-grid-item-shrink-1">
+                                            <div class="intec-grid intec-grid-nowrap intec-grid-600-wrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                                <div class="intec-grid-item intec-grid-item-600-1 intec-grid-item-shrink-1">
+                                                    <div class="search-title-item-content">
+                                                        <a href="" class="search-title-item-name intec-cl-text-hover">
+                                                            <b>Терминал</b> Самообслужвания Классика Т-810 Настенный (INTEL BOXNUC7CJYH2 (Intel Celeron), CUSTOM VKP-80II, Без ФР) </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-title-item search-title-item-hover">
+                            <div class="search-title-item-wrapper intec-content">
+                                <div class="search-title-item-wrapper-2 intec-content-wrapper">
+                                    <div class="search-title-item-wrapper-3 intec-grid intec-grid-nowrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                        <div class="search-title-item-content-wrap intec-grid-item intec-grid-item-shrink-1">
+                                            <div class="intec-grid intec-grid-nowrap intec-grid-600-wrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                                <div class="intec-grid-item intec-grid-item-600-1 intec-grid-item-shrink-1">
+                                                    <div class="search-title-item-content">
+                                                        <a href="" class="search-title-item-name intec-cl-text-hover">
+                                                            <b>Терминал</b> Самообслужвания Классика Т-810 Настенный (INTEL BOXNUC7CJYH2 (Intel Celeron), SNBC BK-T680, Без ФР) </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-title-item search-title-item-hover">
+                            <div class="search-title-item-wrapper intec-content">
+                                <div class="search-title-item-wrapper-2 intec-content-wrapper">
+                                    <div class="search-title-item-wrapper-3 intec-grid intec-grid-nowrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                        <div class="search-title-item-content-wrap intec-grid-item intec-grid-item-shrink-1">
+                                            <div class="intec-grid intec-grid-nowrap intec-grid-600-wrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                                <div class="intec-grid-item intec-grid-item-600-1 intec-grid-item-shrink-1">
+                                                    <div class="search-title-item-content">
+                                                        <a href="" class="search-title-item-name intec-cl-text-hover">
+                                                            <b>Терминал</b> Самообслужвания Классика Т-810 Настенный (INTEL BOXNUC7CJYH2 (Intel Celeron), SNBC BT-T080R, Без ФР) </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-title-item search-title-item-hover">
+                            <div class="search-title-item-wrapper intec-content">
+                                <div class="search-title-item-wrapper-2 intec-content-wrapper">
+                                    <div class="search-title-item-wrapper-3 intec-grid intec-grid-nowrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                        <div class="search-title-item-content-wrap intec-grid-item intec-grid-item-shrink-1">
+                                            <div class="intec-grid intec-grid-nowrap intec-grid-600-wrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                                <div class="intec-grid-item intec-grid-item-600-1 intec-grid-item-shrink-1">
+                                                    <div class="search-title-item-content">
+                                                        <a href="" class="search-title-item-name intec-cl-text-hover">
+                                                            <b>Терминал</b> Самообслужвания Классика Т-810 Настенный (INTEL BOXNUC8i3BEH2 (Intel i3), CUSTOM VKP-80II, Без ФР) </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-title-item search-title-item-hover">
+                            <div class="search-title-item-wrapper intec-content">
+                                <div class="search-title-item-wrapper-2 intec-content-wrapper">
+                                    <div class="search-title-item-wrapper-3 intec-grid intec-grid-nowrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                        <div class="search-title-item-content-wrap intec-grid-item intec-grid-item-shrink-1">
+                                            <div class="intec-grid intec-grid-nowrap intec-grid-600-wrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                                <div class="intec-grid-item intec-grid-item-600-1 intec-grid-item-shrink-1">
+                                                    <div class="search-title-item-content">
+                                                        <a href="" class="search-title-item-name intec-cl-text-hover">
+                                                            <b>Терминал</b> Самообслужвания Классика Т-810 Настенный (INTEL BOXNUC8i3BEH2 (Intel i3), SNBC BK-T680, Без ФР) </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-title-item">
+                            <div class="search-title-item-wrapper intec-content">
+                                <div class="search-title-item-wrapper-2 intec-content-wrapper">
+                                    <div class="search-title-item-wrapper-3 intec-grid intec-grid-nowrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                        <div class="search-title-item-content-wrap intec-grid-item intec-grid-item-shrink-1">
+                                            <div class="search-title-item-content">
+                                                <a href="/catalog/?q=%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB+&f%5B0%5D%5BLOGIC%5D=OR" class="search-title-item-name">
+                                                                остальные                                            </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-title-item">
+                            <div class="search-title-item-wrapper intec-content">
+                                <div class="search-title-item-wrapper-2 intec-content-wrapper">
+                                    <div class="search-title-item-wrapper-3 intec-grid intec-grid-nowrap intec-grid-i-h-15 intec-grid-a-v-center">
+                                        <div class="search-title-item-content-wrap intec-grid-item-auto intec-grid-item-shrink-1">
+                                            <div class="search-title-item-content">
+                                                <a href="/catalog/?q=%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB+" class="search-title-item-button">
+                                                                Все результаты                                            </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <ul class="top-header__btns">
                 <li class="top-header__btns_search-label" title="Поиск по сайту" onclick="showSearchField()">
                     <img src="img/search-icon.svg" alt="Поиск по сайту" width="16" height="16">
                 </li>
                 <li class="top-header__btns_cart" title="Корзина">
                     <a href=""><img src="img/cart-icon.svg" alt="Корзина" width="16" height="16"></a>
+                    <span class="cart-counter">4</span>
                 </li>
                 <li class="top-header__btns_compare" title="Сравнение">
                     <a href=""><img src="img/compare-icon.svg" alt="Сравнение" width="16" height="16"></a>
+                    <span class="compare-counter">4</span>
                 </li>
                 <li class="top-header__btns_favourite" title="Избранное">
                     <a href=""><img src="img/favourite-icon.svg" alt="Избранное" width="16" height="16"></a>
+                    <span class="fav-counter">4</span>
                 </li>
             </ul>
             <div class="top-header__login" title="Войти в личный кабинет">
@@ -174,15 +334,15 @@
                     <li class="the-best-list__element">
                         <img src="./img/best-goods/kiosk-1.png" alt="фото товара" class="the-best-list__element-img">
                         <span class="in-stock__btn the-best-list__element-stock">В наличии</span>
-                            <div class="rating the-best-list__element-rating">
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                            </div>
-                            <p class="the-best-list__element-description sm-text__normal">Терминал самообслуживания Слим Т-1000 напольный</p>
-                            <span class="the-best-list__element-cost">163 000 ₽</span>
+                        <div class="rating the-best-list__element-rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                        <p class="the-best-list__element-description sm-text__normal">Терминал самообслуживания Слим Т-1000 напольный</p>
+                        <span class="the-best-list__element-cost">163 000 ₽</span>
                         <button type="button" class="the-best-ist__element-cart product-card__cart-icon">
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.24 18.4402C18.8447 18.4402 19.4246 18.6804 19.8522 19.108C20.2798 19.5356 20.52 20.1155 20.52 20.7202C20.52 21.3249 20.2798 21.9048 19.8522 22.3324C19.4246 22.76 18.8447 23.0002 18.24 23.0002C17.6353 23.0002 17.0554 22.76 16.6278 22.3324C16.2002 21.9048 15.96 21.3249 15.96 20.7202C15.96 19.4548 16.9746 18.4402 18.24 18.4402ZM0 0.200195H3.7278L4.7994 2.4802H21.66C21.9623 2.4802 22.2523 2.6003 22.4661 2.81409C22.6799 3.02789 22.8 3.31785 22.8 3.6202C22.8 3.814 22.743 4.0078 22.6632 4.1902L18.582 11.566C18.1944 12.2614 17.442 12.7402 16.587 12.7402H8.094L7.068 14.5984L7.0338 14.7352C7.0338 14.8108 7.06383 14.8833 7.11727 14.9367C7.17072 14.9902 7.24321 15.0202 7.3188 15.0202H20.52V17.3002H6.84C6.23531 17.3002 5.65538 17.06 5.2278 16.6324C4.80021 16.2048 4.56 15.6249 4.56 15.0202C4.56 14.6212 4.6626 14.245 4.8336 13.9258L6.384 11.1328L2.28 2.4802H0V0.200195ZM6.84 18.4402C7.44469 18.4402 8.02462 18.6804 8.4522 19.108C8.87979 19.5356 9.12 20.1155 9.12 20.7202C9.12 21.3249 8.87979 21.9048 8.4522 22.3324C8.02462 22.76 7.44469 23.0002 6.84 23.0002C6.23531 23.0002 5.65538 22.76 5.2278 22.3324C4.80021 21.9048 4.56 21.3249 4.56 20.7202C4.56 19.4548 5.5746 18.4402 6.84 18.4402ZM17.1 10.4602L20.2692 4.7602H5.8596L8.55 10.4602H17.1Z" fill="white"/>
@@ -192,15 +352,15 @@
                     <li class="the-best-list__element">
                         <img src="./img/best-goods/kiosk-2.png" alt="фото товара" class="the-best-list__element-img">
                         <span class="in-stock__btn the-best-list__element-stock">В наличии</span>
-                            <div class="rating the-best-list__element-rating">
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                            </div>
-                            <p class="the-best-list__element-description sm-text__normal">Терминал самообслуживания Слим Т-1000 напольный</p>
-                            <span class="the-best-list__element-cost">163 000 ₽</span>
+                        <div class="rating the-best-list__element-rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                        <p class="the-best-list__element-description sm-text__normal">Терминал самообслуживания Слим Т-1000 напольный</p>
+                        <span class="the-best-list__element-cost">163 000 ₽</span>
                         <button type="button" class="the-best-ist__element-cart product-card__cart-icon">
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.24 18.4402C18.8447 18.4402 19.4246 18.6804 19.8522 19.108C20.2798 19.5356 20.52 20.1155 20.52 20.7202C20.52 21.3249 20.2798 21.9048 19.8522 22.3324C19.4246 22.76 18.8447 23.0002 18.24 23.0002C17.6353 23.0002 17.0554 22.76 16.6278 22.3324C16.2002 21.9048 15.96 21.3249 15.96 20.7202C15.96 19.4548 16.9746 18.4402 18.24 18.4402ZM0 0.200195H3.7278L4.7994 2.4802H21.66C21.9623 2.4802 22.2523 2.6003 22.4661 2.81409C22.6799 3.02789 22.8 3.31785 22.8 3.6202C22.8 3.814 22.743 4.0078 22.6632 4.1902L18.582 11.566C18.1944 12.2614 17.442 12.7402 16.587 12.7402H8.094L7.068 14.5984L7.0338 14.7352C7.0338 14.8108 7.06383 14.8833 7.11727 14.9367C7.17072 14.9902 7.24321 15.0202 7.3188 15.0202H20.52V17.3002H6.84C6.23531 17.3002 5.65538 17.06 5.2278 16.6324C4.80021 16.2048 4.56 15.6249 4.56 15.0202C4.56 14.6212 4.6626 14.245 4.8336 13.9258L6.384 11.1328L2.28 2.4802H0V0.200195ZM6.84 18.4402C7.44469 18.4402 8.02462 18.6804 8.4522 19.108C8.87979 19.5356 9.12 20.1155 9.12 20.7202C9.12 21.3249 8.87979 21.9048 8.4522 22.3324C8.02462 22.76 7.44469 23.0002 6.84 23.0002C6.23531 23.0002 5.65538 22.76 5.2278 22.3324C4.80021 21.9048 4.56 21.3249 4.56 20.7202C4.56 19.4548 5.5746 18.4402 6.84 18.4402ZM17.1 10.4602L20.2692 4.7602H5.8596L8.55 10.4602H17.1Z" fill="white"/>
@@ -210,15 +370,15 @@
                     <li class="the-best-list__element">
                         <img src="./img/best-goods/kiosk-3.png" alt="фото товара" class="the-best-list__element-img">
                         <span class="in-stock__btn the-best-list__element-stock">В наличии</span>
-                            <div class="rating the-best-list__element-rating">
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                            </div>
-                            <p class="the-best-list__element-description sm-text__normal">Терминал самообслуживания Слим Т-1000 напольный</p>
-                            <span class="the-best-list__element-cost">163 000 ₽</span>
+                        <div class="rating the-best-list__element-rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                        <p class="the-best-list__element-description sm-text__normal">Терминал самообслуживания Слим Т-1000 напольный</p>
+                        <span class="the-best-list__element-cost">163 000 ₽</span>
                         <button type="button" class="the-best-ist__element-cart product-card__cart-icon">
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.24 18.4402C18.8447 18.4402 19.4246 18.6804 19.8522 19.108C20.2798 19.5356 20.52 20.1155 20.52 20.7202C20.52 21.3249 20.2798 21.9048 19.8522 22.3324C19.4246 22.76 18.8447 23.0002 18.24 23.0002C17.6353 23.0002 17.0554 22.76 16.6278 22.3324C16.2002 21.9048 15.96 21.3249 15.96 20.7202C15.96 19.4548 16.9746 18.4402 18.24 18.4402ZM0 0.200195H3.7278L4.7994 2.4802H21.66C21.9623 2.4802 22.2523 2.6003 22.4661 2.81409C22.6799 3.02789 22.8 3.31785 22.8 3.6202C22.8 3.814 22.743 4.0078 22.6632 4.1902L18.582 11.566C18.1944 12.2614 17.442 12.7402 16.587 12.7402H8.094L7.068 14.5984L7.0338 14.7352C7.0338 14.8108 7.06383 14.8833 7.11727 14.9367C7.17072 14.9902 7.24321 15.0202 7.3188 15.0202H20.52V17.3002H6.84C6.23531 17.3002 5.65538 17.06 5.2278 16.6324C4.80021 16.2048 4.56 15.6249 4.56 15.0202C4.56 14.6212 4.6626 14.245 4.8336 13.9258L6.384 11.1328L2.28 2.4802H0V0.200195ZM6.84 18.4402C7.44469 18.4402 8.02462 18.6804 8.4522 19.108C8.87979 19.5356 9.12 20.1155 9.12 20.7202C9.12 21.3249 8.87979 21.9048 8.4522 22.3324C8.02462 22.76 7.44469 23.0002 6.84 23.0002C6.23531 23.0002 5.65538 22.76 5.2278 22.3324C4.80021 21.9048 4.56 21.3249 4.56 20.7202C4.56 19.4548 5.5746 18.4402 6.84 18.4402ZM17.1 10.4602L20.2692 4.7602H5.8596L8.55 10.4602H17.1Z" fill="white"/>
@@ -228,15 +388,15 @@
                     <li class="the-best-list__element">
                         <img src="./img/best-goods/kiosk-4.png" alt="фото товара" class="the-best-list__element-img">
                         <span class="in-stock__btn the-best-list__element-stock">В наличии</span>
-                            <div class="rating the-best-list__element-rating">
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                                <span>☆</span>
-                            </div>
-                            <p class="the-best-list__element-description sm-text__normal">Терминал самообслуживания Слим Т-1000 напольный</p>
-                            <span class="the-best-list__element-cost">163 000 ₽</span>
+                        <div class="rating the-best-list__element-rating">
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                            <span>☆</span>
+                        </div>
+                        <p class="the-best-list__element-description sm-text__normal">Терминал самообслуживания Слим Т-1000 напольный</p>
+                        <span class="the-best-list__element-cost">163 000 ₽</span>
                         <button type="button" class="the-best-ist__element-cart product-card__cart-icon">
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.24 18.4402C18.8447 18.4402 19.4246 18.6804 19.8522 19.108C20.2798 19.5356 20.52 20.1155 20.52 20.7202C20.52 21.3249 20.2798 21.9048 19.8522 22.3324C19.4246 22.76 18.8447 23.0002 18.24 23.0002C17.6353 23.0002 17.0554 22.76 16.6278 22.3324C16.2002 21.9048 15.96 21.3249 15.96 20.7202C15.96 19.4548 16.9746 18.4402 18.24 18.4402ZM0 0.200195H3.7278L4.7994 2.4802H21.66C21.9623 2.4802 22.2523 2.6003 22.4661 2.81409C22.6799 3.02789 22.8 3.31785 22.8 3.6202C22.8 3.814 22.743 4.0078 22.6632 4.1902L18.582 11.566C18.1944 12.2614 17.442 12.7402 16.587 12.7402H8.094L7.068 14.5984L7.0338 14.7352C7.0338 14.8108 7.06383 14.8833 7.11727 14.9367C7.17072 14.9902 7.24321 15.0202 7.3188 15.0202H20.52V17.3002H6.84C6.23531 17.3002 5.65538 17.06 5.2278 16.6324C4.80021 16.2048 4.56 15.6249 4.56 15.0202C4.56 14.6212 4.6626 14.245 4.8336 13.9258L6.384 11.1328L2.28 2.4802H0V0.200195ZM6.84 18.4402C7.44469 18.4402 8.02462 18.6804 8.4522 19.108C8.87979 19.5356 9.12 20.1155 9.12 20.7202C9.12 21.3249 8.87979 21.9048 8.4522 22.3324C8.02462 22.76 7.44469 23.0002 6.84 23.0002C6.23531 23.0002 5.65538 22.76 5.2278 22.3324C4.80021 21.9048 4.56 21.3249 4.56 20.7202C4.56 19.4548 5.5746 18.4402 6.84 18.4402ZM17.1 10.4602L20.2692 4.7602H5.8596L8.55 10.4602H17.1Z" fill="white"/>
@@ -317,23 +477,23 @@
                 <ul class="questions-list">
                     <li class="questions-list-element">
                         <h4 class="questions-list-element__title md-title__normal">Что такое киоск самообслуживания?</h4>
-                        <p class="questions-list__answer lg-text__normal">Терминал самообслуживания (или киоск самообслуживания) - это законченное решение для самостоятельного заказа услуг и товаров клиентом, оплаты и выдачи.
-Киоск может быть установлен в торговом зале кафе или ресторана, или на прикассовой зоне в магазинах самообслуживания</p>
+                        <p class="questions-list__answer lg-text__normal">Терминал самообслуживания (или киоск самообслуживания) - это законченное решение для самостоятельного заказа услуг и товаров клиентом, оплаты и выдачи. Киоск может быть установлен в торговом зале кафе или ресторана, или на прикассовой
+                            зоне в магазинах самообслуживания</p>
                     </li>
                     <li class="questions-list-element">
                         <h4 class="questions-list-element__title md-title__normal">В какой сфере могут применяться терминалы самообслуживания?</h4>
-                        <p class="questions-list__answer lg-text__normal">Терминал самообслуживания (или киоск самообслуживания) - это законченное решение для самостоятельного заказа услуг и товаров клиентом, оплаты и выдачи.
-Киоск может быть установлен в торговом зале кафе или ресторана, или на прикассовой зоне в магазинах самообслуживания</p>
+                        <p class="questions-list__answer lg-text__normal">Терминал самообслуживания (или киоск самообслуживания) - это законченное решение для самостоятельного заказа услуг и товаров клиентом, оплаты и выдачи. Киоск может быть установлен в торговом зале кафе или ресторана, или на прикассовой
+                            зоне в магазинах самообслуживания</p>
                     </li>
                     <li class="questions-list-element">
                         <h4 class="questions-list-element__title md-title__normal">Чем мне может помочь установка терминала самообслуживания?</h4>
-                        <p class="questions-list__answer lg-text__normal">Терминал самообслуживания (или киоск самообслуживания) - это законченное решение для самостоятельного заказа услуг и товаров клиентом, оплаты и выдачи.
-Киоск может быть установлен в торговом зале кафе или ресторана, или на прикассовой зоне в магазинах самообслуживания</p>
+                        <p class="questions-list__answer lg-text__normal">Терминал самообслуживания (или киоск самообслуживания) - это законченное решение для самостоятельного заказа услуг и товаров клиентом, оплаты и выдачи. Киоск может быть установлен в торговом зале кафе или ресторана, или на прикассовой
+                            зоне в магазинах самообслуживания</p>
                     </li>
                     <li class="questions-list-element">
                         <h4 class="questions-list-element__title md-title__normal">Насколько сложно установить киоск?</h4>
-                        <p class="questions-list__answer lg-text__normal">Терминал самообслуживания (или киоск самообслуживания) - это законченное решение для самостоятельного заказа услуг и товаров клиентом, оплаты и выдачи.
-Киоск может быть установлен в торговом зале кафе или ресторана, или на прикассовой зоне в магазинах самообслуживания</p>
+                        <p class="questions-list__answer lg-text__normal">Терминал самообслуживания (или киоск самообслуживания) - это законченное решение для самостоятельного заказа услуг и товаров клиентом, оплаты и выдачи. Киоск может быть установлен в торговом зале кафе или ресторана, или на прикассовой
+                            зоне в магазинах самообслуживания</p>
                     </li>
                 </ul>
                 <a href="" class="show-all__link">Смотреть все</a>
@@ -400,25 +560,26 @@
                 <div class="contacts-address lg-text__normal">
                     <svg width="22" height="32" viewBox="0 0 22 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.9313 14.9156C9.90768 14.9156 8.92603 14.509 8.20226 13.7852C7.47849 13.0615 7.07188 12.0798 7.07188 11.0563C7.07188 10.0327 7.47849 9.05103 8.20226 8.32726C8.92603 7.60349 9.90768 7.19688 10.9313 7.19688C11.9548 7.19688 12.9365 7.60349 13.6602 8.32726C14.384 9.05103 14.7906 10.0327 14.7906 11.0563C14.7906 11.5631 14.6908 12.0649 14.4968 12.5332C14.3029 13.0014 14.0186 13.4269 13.6602 13.7852C13.3019 14.1436 12.8764 14.4279 12.4082 14.6218C11.9399 14.8158 11.4381 14.9156 10.9313 14.9156V14.9156ZM10.9313 0.25C8.06525 0.25 5.31664 1.38851 3.29008 3.41508C1.26351 5.44164 0.125 8.19025 0.125 11.0563C0.125 19.1609 10.9313 31.125 10.9313 31.125C10.9313 31.125 21.7375 19.1609 21.7375 11.0563C21.7375 8.19025 20.599 5.44164 18.5724 3.41508C16.5459 1.38851 13.7972 0.25 10.9313 0.25V0.25Z" fill="#1182C5"/>
-                    </svg>                    
+                    </svg>
                     <address>г. Тверь,<br>ул. Учительская, д. 59</address>
                 </div>
                 <div class="contacts-phone">
                     <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.72889 11.7522C7.80889 15.84 11.16 19.1911 15.2478 21.2711L18.4256 18.0933C18.83 17.6889 19.3933 17.5733 19.8989 17.7322C21.5167 18.2667 23.25 18.5556 25.0556 18.5556C25.4386 18.5556 25.806 18.7077 26.0769 18.9786C26.3478 19.2495 26.5 19.6169 26.5 20V25.0556C26.5 25.4386 26.3478 25.806 26.0769 26.0769C25.806 26.3478 25.4386 26.5 25.0556 26.5C18.543 26.5 12.2972 23.9129 7.69216 19.3078C3.0871 14.7028 0.5 8.45698 0.5 1.94444C0.5 1.56135 0.652182 1.19395 0.923068 0.923068C1.19395 0.652182 1.56135 0.5 1.94444 0.5H7C7.38309 0.5 7.75049 0.652182 8.02138 0.923068C8.29226 1.19395 8.44444 1.56135 8.44444 1.94444C8.44444 3.75 8.73333 5.48333 9.26778 7.10111C9.42667 7.60667 9.31111 8.17 8.90667 8.57444L5.72889 11.7522Z" fill="#1182C5"/>
-                    </svg>                    
+                    </svg>
                     <a href="tel:+74997055933">+7 499 705 59 33</a>
                 </div>
                 <div class="contacts-mail">
                     <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23.4 0H2.6C1.17 0 0 1.17 0 2.6V18.2C0 19.63 1.17 20.8 2.6 20.8H23.4C24.83 20.8 26 19.63 26 18.2V2.6C26 1.17 24.83 0 23.4 0ZM22.88 5.525L14.378 10.842C13.533 11.375 12.467 11.375 11.622 10.842L3.12 5.525C2.98965 5.45182 2.87549 5.35296 2.78446 5.23439C2.69342 5.11582 2.62738 4.98001 2.59035 4.83518C2.55331 4.69035 2.54605 4.53952 2.569 4.3918C2.59195 4.24408 2.64464 4.10256 2.72387 3.97579C2.80309 3.84902 2.90722 3.73965 3.02994 3.65429C3.15267 3.56893 3.29143 3.50936 3.43784 3.47919C3.58426 3.44901 3.73527 3.44886 3.88174 3.47873C4.02821 3.50861 4.1671 3.56789 4.29 3.653L13 9.1L21.71 3.653C21.8329 3.56789 21.9718 3.50861 22.1183 3.47873C22.2647 3.44886 22.4157 3.44901 22.5622 3.47919C22.7086 3.50936 22.8473 3.56893 22.9701 3.65429C23.0928 3.73965 23.1969 3.84902 23.2761 3.97579C23.3554 4.10256 23.408 4.24408 23.431 4.3918C23.4539 4.53952 23.4467 4.69035 23.4097 4.83518C23.3726 4.98001 23.3066 5.11582 23.2155 5.23439C23.1245 5.35296 23.0104 5.45182 22.88 5.525Z" fill="#1182C5"/>
-                    </svg>                    
+                    </svg>
                     <a href="mailto:sale@wsens.ru">sale@wsens.ru</a>
                 </div>
                 <button class="main-btn__normal" onclick="openPopup()">Заказать звонок</button>
             </section>
             <section class="contacts-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2181.3540194117277!2d35.87319920527951!3d56.857023628902915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b687adb1beef81%3A0x175f554149dba90d!2z0KPRh9C40YLQtdC70YzRgdC60LDRjyDRg9C7LiwgNTksINCi0LLQtdGA0YwsINCi0LLQtdGA0YHQutCw0Y8g0L7QsdC7LiwgMTcwMDAx!5e0!3m2!1sru!2sru!4v1602482330393!5m2!1sru!2sru" width="720" height="720" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2181.3540194117277!2d35.87319920527951!3d56.857023628902915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b687adb1beef81%3A0x175f554149dba90d!2z0KPRh9C40YLQtdC70YzRgdC60LDRjyDRg9C7LiwgNTksINCi0LLQtdGA0YwsINCi0LLQtdGA0YHQutCw0Y8g0L7QsdC7LiwgMTcwMDAx!5e0!3m2!1sru!2sru!4v1602482330393!5m2!1sru!2sru"
+                    width="720" height="720" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </section>
         </section>
     </main>
@@ -510,8 +671,7 @@
                 </ul>
                 <div class="order-call__wrapper">
                     <a class="main-footer__contacts-phone" href="tel:+74997055933">
-                        <img src="img/phone-icon.svg" alt="Номер телефона" width="16" height="16">
-                        +7 499 705 59 33
+                        <img src="img/phone-icon.svg" alt="Номер телефона" width="16" height="16"> +7 499 705 59 33
                     </a>
                     <span class="order-call-span" onclick="openPopup()">Заказать звонок</span>
                 </div>
@@ -555,4 +715,5 @@
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>

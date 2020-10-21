@@ -1,16 +1,22 @@
 // функция показа поля поиска
 function showSearchField() {
-    let searchIcon = document.querySelector('.top-header__btns_search-label');
-    let searchInput = document.querySelector('#searchInput');
-    let searchForm = document.querySelector('.top-header__search-form');
+    let searchForm = document.querySelector('.search-form-wrapper');
 
-    searchInput.classList.toggle('display-none');
-    searchForm.classList.toggle('search-mobile');
+    searchForm.classList.toggle('search-form-wrapper__show');
 };
 
 document.querySelector('.hamburger').addEventListener('click', function() {
     this.classList.toggle('is-active');
 });
+
+// очистить поле поиска и убрать его
+
+function eraseInput() {
+    let searchForm = document.querySelector('.search-form-wrapper');
+    let inputField = document.querySelector('.input-field');
+    inputField.value = '';
+    searchForm.classList.toggle('search-form-wrapper__show');
+}
 
 // покажем мобильное меню
 
@@ -44,7 +50,7 @@ function closePopup() {
     let popupWrapper = document.querySelector('.popup__wrapper');
     popupWrapper.classList.add('closed-popup');
     document.body.classList.remove('no-scroll');
-    
+
     return console.log('попап закрыт');
 }
 
@@ -62,7 +68,7 @@ let question = document.getElementsByClassName('questions-list-element__title');
 let answer = document.getElementsByClassName('questions-list__answer');
 
 for (let i = 0; i < question.length; i++) {
-  question[i].addEventListener('click', function() {
-    answer[i].classList.toggle('show-answer')
-  });
+    question[i].addEventListener('click', function() {
+        answer[i].classList.toggle('show-answer')
+    });
 };
