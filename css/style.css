@@ -612,7 +612,6 @@ img {
         top: 83px;
         right: 0;
         left: 0;
-        width: 96%;
         min-height: 100px;
         /* временный цвет */
         background-color: var(--light-gray);
