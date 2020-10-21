@@ -2304,6 +2304,19 @@ input[type='search']::-webkit-search-results-decoration {
     display: none;
 }
 
+@media (max-width: 680px) {
+    .search-form-wrapper form input {
+        padding: 10px;
+    }
+    .search-form-wrapper form {
+        padding: 10px 20px 0;
+    }
+    .search-btn,
+    .close-btn {
+        padding: 0;
+    }
+}
+
 
 /* результаты поиска */
 
@@ -2321,6 +2334,11 @@ input[type='search']::-webkit-search-results-decoration {
     border-style: none none solid none;
 }
 
+.search-title-item-wrapper {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
 .search-title-item-button {
     display: inline-block;
     padding: 10px 20px;
@@ -2335,8 +2353,17 @@ input[type='search']::-webkit-search-results-decoration {
     background-color: var(--gray);
 }
 
+@media (max-width: 1200px) {
+    .search-title-item {
+        padding: 20px;
+    }
+}
+
 @media (max-width: 680px) {
     .search-form-wrapper {
         padding: 0;
+    }
+    .search-title-results {
+        max-height: 500px;
     }
 }
