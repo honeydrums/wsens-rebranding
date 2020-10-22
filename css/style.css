@@ -2128,6 +2128,33 @@ img {
 	}
 }
 
+/* ошибка заполнения попапа */
+
+@keyframes wrong {
+	0 {
+		transform: translateX(10px);
+	}
+	20% {
+		transform: translateX(-10px);
+	}
+	40% {
+		transform: translateX(5px);
+	}
+	60% {
+		transform: translateX(-5px);
+	}
+	80% {
+		transform: translateX(2px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.callback__popup-wrong {
+	animation: wrong 0.2s;
+}
+
 /* чекбокс в соглашении */
 
 .checkbox-wrap {

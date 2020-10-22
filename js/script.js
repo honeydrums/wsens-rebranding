@@ -23,25 +23,9 @@ function showMobileMenu() {
     document.body.classList.toggle('no-scroll');
 }
 
-// отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
-
-let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]');
-let submitBtn = document.querySelector('input[type="submit"]');
-
-function checkPropButton() {
-    if (checkBox.checked === false) {
-        submitBtn.disabled = true;
-        console.log('nope');
-    } else {
-        submitBtn.disabled = false;
-        console.log('yep');
-    }
-};
-
 // попап
 
 function closePopup() {
-    let popupWrapper = document.querySelector('.popup__wrapper');
     popupWrapper.classList.add('closed-popup');
     document.body.classList.remove('no-scroll');
     
@@ -55,6 +39,25 @@ function openPopup() {
 
     return console.log('попап открыт');
 }
+
+let popupWrapper = document.querySelector('.popup__wrapper');
+
+// отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
+
+let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]');
+let submitBtn = document.querySelector('input[type="submit"]');
+
+function checkPropButton() {
+    if (checkBox.checked === false) {
+        submitBtn.disabled = true;
+        popupWrapper.classList.add('callback__popup-wrong');
+        console.log('nope');
+    } else {
+        submitBtn.disabled = false;
+        popupWrapper.classList.remove('callback__popup-wrong');
+        console.log('yep');
+    }
+};
 
 // показать ответ
 
